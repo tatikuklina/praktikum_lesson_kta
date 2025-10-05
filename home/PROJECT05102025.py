@@ -706,12 +706,12 @@ param_grid = [
     ,
 
 # Добавлен RandomForest
-    {
-        'models': [RandomForestRegressor(random_state=RANDOM_STATE)],
-        'models__n_estimators': [50, 100, 200],
-        'models__max_depth': [None, 5, 10],
-        'models__min_samples_leaf': [1, 2, 4]
-    },
+#    {
+#        'models': [RandomForestRegressor(random_state=RANDOM_STATE)],
+#        'models__n_estimators': [50, 100, 200],
+#        'models__max_depth': [None, 5, 10],
+#        'models__min_samples_leaf': [1, 2, 4]
+#    },
 # Добавьте GradientBoosting  
     {
         'models': [GradientBoostingRegressor(random_state=RANDOM_STATE)],
