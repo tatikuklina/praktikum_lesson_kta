@@ -282,7 +282,6 @@ test_features['workload'].unique()
 test_features['employment_years'].unique()
 
 
-# In[28]:
 
 
 #анализ
@@ -712,13 +711,13 @@ param_grid = [
         'models__n_estimators': [50, 100, 200],
         'models__max_depth': [None, 5, 10],
         'models__min_samples_leaf': [1, 2, 4]
-#    },
-#  # Добавьте GradientBoosting  
-#    {
-#        'models': [GradientBoostingRegressor(random_state=RANDOM_STATE)],
-#        'models__n_estimators': [50, 100],
-#        'models__learning_rate': [0.01, 0.1],
-#        'models__max_depth': [3, 5]
+    },
+# Добавьте GradientBoosting  
+    {
+        'models': [GradientBoostingRegressor(random_state=RANDOM_STATE)],
+        'models__n_estimators': [50, 100],
+        'models__learning_rate': [0.01, 0.1],
+        'models__max_depth': [3, 5]
     }
 
 
@@ -1252,8 +1251,6 @@ plt.tight_layout()
 plt.show()
 
 
-# In[93]:
-
 
 # анализ значений данных
 #pd.set_option('display.max_rows', None)
@@ -1263,9 +1260,6 @@ pivot_quit_train['ratio']= pivot_quit_train['count']/train_quit['id'].shape[0]
 pivot_quit_train.sort_values(by='ratio', ascending=False)
 
 
-# In[94]:
-
-
 #countplot
 sns.countplot(train_quit['employment_years']
              );
@@ -1273,8 +1267,6 @@ plt.suptitle("Распределение employment_years из train_quit ", fon
 plt.tight_layout()
 plt.show()
 
-
-# In[95]:
 
 
 #countplot
